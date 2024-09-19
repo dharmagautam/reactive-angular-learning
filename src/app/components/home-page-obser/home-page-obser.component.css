@@ -1,0 +1,42 @@
+.example-card {
+    max-width: 100%;
+    padding-block: 10px;
+    margin: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+
+  .list-head {
+    font-size: larger ;
+    padding: 5px;
+    padding-left: 40px !important;
+    color: rgb(4, 48, 26);
+    font-weight: bold;
+  }
+
+  .text-oneline {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .mat-card-header{
+    background-color: gainsboro !important;
+    padding:5px !important;
+  }
+  
+  .mat-card{
+    padding:0 !important;
+    background-color: rgb(236, 243, 232) !important; 
+  }
+  
+  .mat-card-content{
+    padding:5px !important;
+  }
+
+  p {
+    font-style: italic;
+  }
+
+  cus-style {
+    font: bold
+}

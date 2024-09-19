@@ -1,0 +1,38 @@
+<mat-card class="example-card mat-card" appearance="outlined">
+    <mat-card-header class="mat-card-header">
+        <mat-card-title class="mat-card-title">Hello User!</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content class="mat-card-content">
+        <p>
+            This is demo for Reactive Angular!
+        </p>
+        <mat-tab-group>
+            <ng-container *ngIf="mumbai?.length > 0">
+                <mat-tab label="MI">
+                    <div class="list-head">Mumbai</div>
+                    <ul>
+                        <li *ngFor="let player of mumbai" class="cus-style">{{ player.firstName }} {{ player.lastName }}</li>
+                    </ul>
+                </mat-tab>
+            </ng-container>
+            <ng-container *ngIf="chennai?.length > 0">
+                <mat-tab label="CSK">
+                    <div class="list-head">Chennai</div>
+                    <ul>
+                        <li *ngFor="let player of chennai" class="cus-style">{{ player.firstName }} {{ player.lastName }}</li>
+                    </ul>
+                </mat-tab>
+            </ng-container>
+            <ng-container *ngIf="rcb?.length > 0">
+                <mat-tab label="RCB">
+                    <div class="list-head">Bangalore</div>
+                    <ul>
+                        <li *ngFor="let player of rcb" class="cus-style">{{ player.firstName }} {{ player.lastName }}</li>
+                    </ul>
+                </mat-tab>
+            </ng-container>
+
+        </mat-tab-group>
+    </mat-card-content>
+</mat-card>
